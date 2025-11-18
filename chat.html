@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Tutor - Aesthetic Study Companion</title>
+    <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="stylesheet" href="assets/css/animations.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body class="chat-page">
+    <div class="blob blob1"></div>
+    <div class="blob blob2"></div>
+
+    <header class="main-header app-header">
+        <nav class="navbar">
+            <div class="logo">StudyBliss</div>
+            <ul class="nav-links">
+                <li><a href="app.html">Dashboard</a></li>
+                <li><a href="chat.html" class="active">AI Tutor</a></li>
+                <li><a href="index.html">Logout</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="chat-container">
+        <div class="chat-messages">
+            <div class="message-bubble ai-bubble">
+                <div class="avatar">🤖</div>
+                <p>Hello! How can I help you study today?</p>
+            </div>
+            <div class="message-bubble user-bubble">
+                <p>Can you explain photosynthesis in a simple way?</p>
+            </div>
+            <div class="message-bubble ai-bubble">
+                <div class="avatar">🤖</div>
+                <div class="typing-indicator">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </div>
+        <div class="chat-input-area">
+            <input type="text" id="chat-input" placeholder="Ask your question...">
+            <button id="send-btn">Send</button>
+        </div>
+    </main>
+
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/chat.js"></script>
+</body>
+</html>

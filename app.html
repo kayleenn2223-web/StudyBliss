@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>App - Aesthetic Study Companion</title>
+    <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="stylesheet" href="assets/css/animations.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+<body>
+    <div class="blob blob1"></div>
+    <div class="blob blob2"></div>
+
+    <header class="main-header app-header">
+        <nav class="navbar">
+            <div class="logo">StudyBliss</div>
+            <ul class="nav-links">
+                <li><a href="app.html" class="active">Dashboard</a></li>
+                <li><a href="chat.html">AI Tutor</a></li>
+                <li><a href="index.html">Logout</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="app-container">
+        <!-- Habit Tracker -->
+        <section class="app-section habit-tracker">
+            <h2>Habit Tracker</h2>
+            <div class="habits-grid">
+                <div class="habit-card">
+                    <div class="habit-icon">💧</div>
+                    <div class="habit-info">
+                        <p>Drink Water</p>
+                        <div class="progress-bar">
+                            <div class="progress" style="width: 60%;"></div>
+                        </div>
+                    </div>
+                    <div class="habit-check">
+                        <input type="checkbox" id="habit1">
+                        <label for="habit1"></label>
+                    </div>
+                </div>
+                <div class="habit-card">
+                    <div class="habit-icon">📖</div>
+                    <div class="habit-info">
+                        <p>Read 10 Pages</p>
+                        <div class="progress-bar">
+                            <div class="progress" style="width: 80%;"></div>
+                        </div>
+                    </div>
+                    <div class="habit-check">
+                        <input type="checkbox" id="habit2" checked>
+                        <label for="habit2"></label>
+                    </div>
+                </div>
+                <div class="habit-card">
+                    <div class="habit-icon">🧘</div>
+                    <div class="habit-info">
+                        <p>Meditate</p>
+                        <div class="progress-bar">
+                            <div class="progress" style="width: 20%;"></div>
+                        </div>
+                    </div>
+                    <div class="habit-check">
+                        <input type="checkbox" id="habit3">
+                        <label for="habit3"></label>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div class="app-columns">
+            <!-- To-Do List -->
+            <section class="app-section todo-list">
+                <h2>To-Do List</h2>
+                <div class="todo-input-bar">
+                    <input type="text" id="todo-input" placeholder="Add a new task...">
+                    <button id="add-todo-btn">+</button>
+                </div>
+                <ul class="todos">
+                    <li class="todo-item completed">
+                        <input type="checkbox" id="todo1" checked>
+                        <label for="todo1">Finish Math Homework</label>
+                        <button class="delete-todo">×</button>
+                    </li>
+                    <li class="todo-item">
+                        <input type="checkbox" id="todo2">
+                        <label for="todo2">Plan presentation</label>
+                        <button class="delete-todo">×</button>
+                    </li>
+                </ul>
+            </section>
+
+            <!-- Journal -->
+            <section class="app-section journal">
+                <h2>My Journal</h2>
+                <div class="journal-paper">
+                    <div class="journal-toolbar">
+                        <button><b>B</b></button>
+                        <button style="background: #A9C8FF80;">H</button>
+                        <button>•</button>
+                    </div>
+                    <textarea class="journal-textarea" placeholder="What's on your mind?"></textarea>
+                    <div class="journal-footer">
+                        <div class="mood-selector">
+                            <p>Mood:</p>
+                            <span>😊</span>
+                            <span>😍</span>
+                            <span>😐</span>
+                            <span>😢</span>
+                        </div>
+                        <button class="btn-save">Save</button>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/habit.js"></script>
+</body>
+</html>
